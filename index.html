@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BookLib</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+
+        <header class="container">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-book fa-green fa-stack-1x"></i>
+                            </span>
+                            BookLib
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Accueil</a></li>
+                            <li><a href="#">Concept</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Catégories <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Roman</a></li>
+                                    <li><a href="#">SF</a></li>
+                                    <li><a href="#">Histoire</a></li>
+                                    <li><a href="#">Thriller</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="fa-stack">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-user fa-green fa-stack-1x"></i>
+                                    </span>
+                                    Mon Compte
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-sign-in"></i>
+                                            Se connecter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user-plus"></i>
+                                            Créer un compte
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <section class="header-home">
+                <div class="container">
+                    <div class="jumbotron">
+
+                        <h1>La plateforme n°1 des lecteurs !</h1>
+
+                        <p>Booklib est une plateforme vous permettant de visualiser les livres disponibles dans les boîtes à livres autour de chez vous.</p>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title text-center">Rechercher un livre</h2>
+                            </div>
+                            <div class="panel-body">
+                                <form class="form-inline text-center">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="inputTitle">Titre</label>
+                                        <input type="text" class="form-control" id="inputTitle" placeholder="Titre">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="selectCategory">Email</label>
+                                        <select class="form-control" id="selectCategory">
+                                            <option disabled selected>Toutes les catégories</option>
+                                            <option>Roman</option>
+                                            <option>SF</option>
+                                            <option>Histoire</option>
+                                            <option>Thriller</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-default">
+                                        <i class="fa fa-search"></i>
+                                        Rechercher
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container">
+
+                <div class="row">
+
+                    <div class="col-md-8 last-books">
+                        <h2>Les derniers livres</h2>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="uploads/hpelcdf.jpg" alt="Harry Potter et la coupe de feu">
+                                    <div class="caption">
+                                        <h3>Harry Potter et la coupe de feu</h3>
+                                        <div class="book-infos">
+                                            <span class="label label-info"><i class="fa fa-user"></i> J.K. Rowling</span>
+                                            <span class="label label-success"><i class="fa fa-tag"></i> Roman</span>
+                                            <span class="label label-success"><i class="fa fa-tag"></i> Fantastique</span>
+                                        </div>
+                                        <p><a href="#" class="btn btn-primary" role="button"><i class="fa fa-eye"></i> Voir plus</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="uploads/aec.jpg" alt="Asterix et Cléopâtre">
+                                    <div class="caption">
+                                        <h3>Asterix et Cléopâtre</h3>
+                                        <div class="book-infos">
+                                            <span class="label label-info"><i class="fa fa-user"></i> René Goscinny</span>
+                                            <span class="label label-success"><i class="fa fa-tag"></i> Bande dessinée</span>
+                                        </div>
+                                        <p><a href="#" class="btn btn-primary" role="button"><i class="fa fa-eye"></i> Voir plus</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="uploads/mb.jpg" alt="Madame Bovary">
+                                    <div class="caption">
+                                        <h3>Madame Bovary</h3>
+                                        <div class="book-infos">
+                                            <span class="label label-info"><i class="fa fa-user"></i> Gustave Flaubert</span>
+                                            <span class="label label-success"><i class="fa fa-tag"></i> Roman</span>
+                                        </div>
+                                        <p><a href="#" class="btn btn-primary" role="button"><i class="fa fa-eye"></i> Voir plus</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="uploads/hpalds.jpg" alt="Harry Potter à l'école des sorciers">
+                                    <div class="caption">
+                                        <h3>Harry Potter à l'école des sorciers</h3>
+                                        <div class="book-infos">
+                                            <span class="label label-info"><i class="fa fa-user"></i> J.K. Rowling</span>
+                                            <span class="label label-success"><i class="fa fa-tag"></i> Roman</span>
+                                            <span class="label label-success"><i class="fa fa-tag"></i> Fantastique</span>
+                                        </div>
+                                        <p><a href="#" class="btn btn-primary" role="button"><i class="fa fa-eye"></i> Voir plus</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">Top villes</h2>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">125 livres</span>
+                                        Nantes
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">113 livres</span>
+                                        Rennes
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">92 livres</span>
+                                        Angers
+                                    </a>
+                                </div>
+                                <a class="btn btn-primary btn-block"><i class="fa fa-map"></i> Voir toutes les villes</a>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">Top utilisateurs</h2>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">223 échanges</span>
+                                        Guillaume C.
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">187 échanges</span>
+                                        Florian C.
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">155 échanges</span>
+                                        Emilie D.
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">152 échanges</span>
+                                        Bastien B.
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">150 échanges</span>
+                                        Kevin C.
+                                    </a>
+                                </div>
+                                <a class="btn btn-primary btn-block"><i class="fa fa-users"></i> Voir tous les utilisateurs</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="container">
+                
+                <h2>Rechercher une boîte à livre</h2>
+
+                <div id="map-books"></div>
+
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <i class="fa fa-copyright"></i> BookLib 2017
+        </footer>
+
+        <script src="assets/jquery/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/googlemap/markercluster.js"></script>
+        <script src="js/script.js"></script>
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrJIIV0nvzIRA3QqNc4CpXLAq5XaQEJ_Q&callback=initBooksMap"></script>
+
+    </body>
+</html>
