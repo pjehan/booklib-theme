@@ -1,8 +1,8 @@
-$(document).ready(function () {
+import $ from 'jquery';
+import bootstrap from 'bootstrap';
+import { MarkerClusterer } from 'marker-precluster';
 
-
-
-});
+import './style.scss';
 
 var booksMap = null;
 
@@ -28,6 +28,7 @@ function initBooksMap() {
         var markerCluster = new MarkerClusterer(booksMap, markers, {imagePath: 'images/m'});
     });
 }
+window.initBooksMap = initBooksMap;
 
 function updateBooksMapCenter(position) {
     booksMap.setCenter({lat: position.coords.latitude, lng: position.coords.longitude});
